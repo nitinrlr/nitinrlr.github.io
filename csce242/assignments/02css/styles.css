@@ -35,12 +35,14 @@ h2 {
     margin-top: 25px;
 }
 
-.image-wrapper {
+#picture-1,
+#picture-2  {
     margin: 20px 0;
     text-align: center;
 }
 
-.image-wrapper img {
+#picture-1 img,
+#picture-2 img  {
     width: 80%;
     max-height: 350px;
     object-fit: cover;
@@ -51,7 +53,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Table with padding, borders, and background colors */
+/* Table padding, borders, and colors */
 #f1-table {
     width: 100%;
     border-collapse: collapse;
@@ -61,20 +63,16 @@ h2 {
 
 #f1-table th, 
 #f1-table td {
-    padding: 12px 15px;
-    border: 1px solid #cccccc;
+    padding: 10px 15px;
+    border: 1px solid #c0bfbf;
     text-align: left;
 }
 
 #f1-table th {
-    background-color: #15151e;
+    background-color: #15151d;
     color: #ffffff;
 }
 
-#f1-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-#f1-table tbody tr:nth-child(odd) {
-    background-color: #ffffff;
+#f1-table tr:nth-child(even) {
+    background-color: #e9e8e8;
 }
