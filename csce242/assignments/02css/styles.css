@@ -1,0 +1,80 @@
+/* Structural */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0c10;
+    background-image: url('images/F1track.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 30px 0;
+    color: #1d1c1c;
+}
+
+#content {
+    background-color: #ffffff;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid #e10600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Typography */
+h1 {
+    color: #e10600; /* F1 Red */
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+h2 {
+    color: #15151e;
+    border-bottom: 2px solid #e10600;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.image-wrapper {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-wrapper img {
+    width: 80%;
+    max-height: 350px;
+    object-fit: cover;
+    padding: 3px;
+    border: 2px solid #e10600;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Table with padding, borders, and background colors */
+#f1-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #15151e;
+}
+
+#f1-table th, 
+#f1-table td {
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+#f1-table th {
+    background-color: #15151e;
+    color: #ffffff;
+}
+
+#f1-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#f1-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
