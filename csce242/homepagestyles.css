@@ -1,18 +1,35 @@
 /* Structural */
 body {
-    font-family: system-ui, 'Segoe UI', 'Open Sans', sans-serif;
-    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #23144b;
     margin: 0;
 }
 
 #content {
-    background-color: #e7ca9c;
+    background-color: #c5bff0;
     width: 90%;
     margin: auto;
 }
 
+header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
 header p {
-    margin: 5px 0;
+    margin: 20px;
+    font-weight: bold;
+    color: #341e73;
+}
+
+header a {
+    margin: 20px;
+    color: #341e73;
+}
+
+header > a:hover {
+    color: #341e73;
 }
 
 main {
@@ -28,9 +45,11 @@ main {
 }
 
 article {
-    background-color: #dce6f5;
+    background-color: #9e87e1;
     width: 300px;
-    padding: 10px;
+    padding: 12px;
+    border: 1px solid #341e73;
+    border-radius: 4px;
 }
 
 article img {
@@ -42,6 +61,7 @@ article img {
 /* Typography */
 h1, h2 {
     text-align: center;
+    color: #341e73;
 }
 
 h1 {
@@ -58,8 +78,12 @@ h3 {
 }
 
 a {
-    color: black;
+    color: #341e73;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 article p {
@@ -70,6 +94,8 @@ article p {
 footer {
     text-align: center;
     margin-top: 30px;
+    padding: 15px 0;
+    color: #341e73;
 }
 
 /* Responsive Design */
