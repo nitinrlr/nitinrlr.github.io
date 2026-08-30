@@ -1,0 +1,100 @@
+/* Structural */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    width: 80%;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+}
+
+.columns aside {
+    flex: 1;
+}
+
+.columns aside h2 {
+    text-align: center;
+}
+
+.columns aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+.columns aside li {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.columns aside a {
+    text-decoration: none;
+}
+
+.columns article {
+    flex: 2;
+}
+
+.columns article h3 {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.columns article img {
+    width: 100%;
+    display: block;
+}
+
+/* Ideas */
+.idea {
+    display: flex;
+}
+
+.idea img {
+    width: 20%;
+    object-fit: cover;
+}
+
+.idea div {
+    flex: 1;
+    padding: 10px;
+}
+
+.idea h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
