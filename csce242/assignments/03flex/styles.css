@@ -98,3 +98,28 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* Responsive Design*/
+@media (max-width: 750px) {
+    header, main, footer {
+        width: 95%;
+    }
+
+    nav ul {
+    flex-direction: column;
+    }
+
+    .columns {
+    flex-direction: column;
+    }
+
+    .idea {
+    flex-direction: column;
+    }
+
+    .idea img {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    }
+}
