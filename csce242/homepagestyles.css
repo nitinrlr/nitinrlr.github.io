@@ -19,7 +19,13 @@ header {
 
 header p {
     margin: 20px;
-    font-weight: bold;
+    color: #341e73;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px;
     color: #341e73;
 }
 
