@@ -1,0 +1,254 @@
+/* Structural */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utility Navigation */
+.utility-nav {
+    padding: 8px 8%;
+}
+
+.utility-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.utility-nav li {
+    list-style-type: none;
+}
+
+.utility-nav a {
+    font-size: 14px;
+}
+
+/* School Header */
+.school-header {
+    padding: 20px 8%;
+}
+
+.school-header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Main Navigation */
+nav > ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 5%;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 12px;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro article {
+    width: 40%;
+    padding: 50px 8%;
+}
+
+.intro > img {
+    width: 60%;
+}
+
+/* Education */
+.education {
+    display: flex;
+    align-items: stretch;
+}
+
+.education article {
+    width: 50%;
+    padding: 60px 8%;
+}
+
+.education > img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.education h2 {
+    margin-top: 0;
+}
+
+/* Quote */
+.quote {
+    padding: 60px 20%;
+    text-align: center;
+}
+
+.quote article {
+    max-width: 900px;
+    margin: auto;
+}
+
+.quote article p:first-child {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* Research */
+.research {
+    display: flex;
+    align-items: stretch;
+}
+
+.research > img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.research article {
+    width: 50%;
+    padding: 60px 8%;
+}
+
+.research h2 {
+    margin-top: 0;
+}
+
+/* Opportunities */
+.opportunities {
+    display: flex;
+    padding: 50px 8%;
+    gap: 40px;
+}
+
+.opportunities article {
+    flex: 1;
+}
+
+.opportunities article > a:first-child {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.opportunities p {
+    line-height: 1.5;
+}
+
+/* Centers and Institutes */
+.centers {
+    display: flex;
+    align-items: stretch;
+}
+
+.centers > img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.centers article {
+    width: 50%;
+    padding: 60px 8%;
+}
+
+.centers h2 {
+    margin-top: 0;
+}
+
+/* Stay Connected */
+.connected {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.connected article {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.connected-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.connected-links a {
+    padding: 15px 25px;
+}
+
+/* Footer */
+footer {
+    padding-top: 40px;
+}
+
+.footer-heading {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-heading h2 {
+    margin: 0;
+}
+
+.footer-links {
+    width: 84%;
+    margin: 30px auto;
+    display: flex;
+    gap: 80px;
+}
+
+.footer-links section {
+    flex: 1;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style-type: none;
+    margin: 8px 0;
+}
+
+.address, .copyright {
+    width: 84%;
+    margin: auto;
+}
+
+.address {
+    padding: 20px 0;
+}
+
+.copyright {
+    padding: 15px 0;
+}
