@@ -61,6 +61,10 @@ body {
 }
 
 /*Footer links */
+#footer-links-title {
+    width:fit-content;
+    margin:auto;
+}
 
 #footer-links {
     background:maroon;
@@ -130,10 +134,19 @@ img {
     padding-top:15px;
 }
 
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
+    #footer-links-title {
+        margin:0;
+    }
+    
     #content {
         width:80%;
         margin:auto;
