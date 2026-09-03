@@ -55,6 +55,7 @@ img {
 
 .utility-nav li:not(:last-child)::after {
     content: "|";
+    color: #eeeeee;
     margin: 0 12px;
 }
 
@@ -103,7 +104,6 @@ img {
 .school-footer-info {
     max-width: 1200px;
     margin: auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,7 +118,7 @@ img {
     margin: 0 0 20px;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 20px;
-    color: #73000a;
+    color: #75000A;
 }
 
 .school-button {
@@ -151,7 +151,7 @@ img {
 }
 
 .school-footer-links a {
-    color: #73000a;
+    color: #75000A;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -166,14 +166,14 @@ img {
 }
 
 .school-address a {
-    color: #73000a;
+    color: #75000a;
     font-weight: bold;
     text-decoration: underline;
 }
 
 /* University Footer */
 .university-footer {
-    background-color: #73000a;
+    background-color: #75000a;
     color: white;
     padding: 30px 8% 55px;
 }
@@ -271,19 +271,16 @@ img {
 }
 
 /* Main Navigation */
-
 nav {
-    background-color: #73000a;
+    background-color: #75000a;
 }
 
 nav > ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     width: 90%;
     max-width: 1650px;
-
     margin: auto;
     padding: 0;
 }
@@ -292,7 +289,6 @@ nav > ul > li {
     list-style-type: none;
     text-align: center;
     padding: 18px 30px;
-
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -305,161 +301,226 @@ nav a {
 
 /* Intro */
 .intro {
-    display: flex;
-    align-items: center;
-}
-
-.intro article {
-    width: 40%;
-    padding: 50px 8%;
-    background-color: #f1f1f1;
-}
-
-.intro article p {
-    font-size: 20px;
-    line-height: 1.6;
+    width: 100%;
 }
 
 .intro > img {
-    width: 60%;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+.intro article {
+    width: 100%;
+    padding: 35px 8%;
+    background-color: white;
+}
+
+.intro article p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 /* Education */
 .education {
-    display: flex;
-    align-items: stretch;
+    position: relative;
+    width: 100%;
+}
+
+.education > img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
 }
 
 .education article {
-    width: 50%;
-    padding: 60px 8%;
-    background-color: #73000a;
+    position: absolute;
+    right: 4%;
+    bottom: -20px;
+    width: 28%;
+    padding: 30px;
+    background-color: #75000a;
     color: white;
-}
-.education > img {
-    width: 50%;
-    object-fit: cover;
+    box-shadow: 0 4px 10px #999999;
 }
 
 .education h2 {
     margin-top: 0;
-    font-size: 36px;
+    font-size: 32px;
+}
+
+.education p {
+    line-height: 1.6;
 }
 
 .education article > a {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 18px;
-    background-color: white;
-    color: #73000a;
+    padding: 10px 18px;
+    background-color: #000000;
+    color: white;
     font-weight: bold;
 }
 
 /* Quote */
 .quote {
-    padding: 70px 20%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 70px 15%;
     background-color: white;
 }
 
+.quote > img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .quote article {
-    max-width: 900px;
-    margin: auto;
+    max-width: 600px;
 }
 
 .quote article p:first-child {
-    font-size: 24px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: bold;
     line-height: 1.6;
-    color: #73000a;
+    color: #75000a;
 }
 
 .quote article p:last-child {
+    font-size: 12px;
     font-weight: bold;
-    font-size: 14px;
 }
 
 /* Research */
 .research {
-    display: flex;
-    align-items: stretch;
+    position: relative;
+    width: 100%;
 }
 
 .research > img {
-    width: 50%;
+    width: 100%;
+    height: 750px;
     object-fit: cover;
 }
 
 .research article {
-    width: 50%;
-    padding: 60px 8%;
-    background-color: #ececec;
+    position: absolute;
+    left: 4%;
+    bottom: -25px;
+    width: 34%;
+    padding: 30px;
+    background-color: #75000A;
+    color: white;
+    box-shadow: 0 4px 10px #999999;
 }
 
 .research h2 {
-    margin-top: 0;
-    font-size: 36px;
-    color: #73000a;
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+.research p {
+    line-height: 1.6;
 }
 
 .research article > a {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 18px;
-    background-color: #73000a;
+    padding: 11px 18px;
+    background-color: #000000;
     color: white;
     font-weight: bold;
-}
-
-.research h2 {
-    margin-top: 0;
+    text-transform: uppercase;
 }
 
 /* Opportunities */
 .opportunities {
     display: flex;
-    padding: 50px 8%;
-    gap: 40px;
-    background-color: white;
+    justify-content: center;
+    gap: 45px;
+    max-width: 1350px;
+    margin: auto;
+    padding: 70px 20px 60px;
 }
 
 .opportunities article {
     flex: 1;
+    min-width: 0;
 }
 
-.opportunities article > a:first-child {
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
+.opportunities img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.opportunities h3 {
+    margin: 12px 10px 8px;
+    font-size: 18px;
+}
+
+.opportunities h3 a {
+    color: #75000a;
 }
 
 .opportunities p {
+    margin: 0 10px 8px;
     line-height: 1.5;
 }
 
 /* Centers and Institutes */
 .centers {
-    display: flex;
-    align-items: stretch;
+    position: relative;
+    width: 100%;
 }
 
 .centers > img {
-    width: 50%;
+    width: 100%;
+    height: 750px;
     object-fit: cover;
 }
 
 .centers article {
-    width: 50%;
-    padding: 60px 8%;
+    position: absolute;
+    left: 5%;
+    bottom: -25px;
+    width: 25%;
+    padding: 30px;
+    background-color: #73000a;
+    color: white;
+    box-shadow: 0 4px 10px #999999;
 }
 
 .centers h2 {
-    margin-top: 0;
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+.centers p {
+    line-height: 1.6;
+}
+
+.centers article > a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 18px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Stay Connected */
 .connected {
-    padding: 55px 8% 70px;
+    padding: 70px 8% 60px;
     text-align: center;
     background-color: #eeeeee;
 }
@@ -471,7 +532,7 @@ nav a {
 
 .connected h2 {
     margin: 0;
-    color: #73000a;
+    color: #75000a;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 46px;
 }
@@ -489,7 +550,7 @@ nav a {
 .connected-links a {
     display: block;
     padding: 14px 28px;
-    background-color: #73000a;
+    background-color: #75000a;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -532,19 +593,15 @@ nav a {
     }
 
     /* Intro */
-    .intro {
-        flex-direction: column;
+    .intro > img {
+        width: 100%;
+        height: 350px;
     }
 
     .intro article {
         width: 100%;
-        padding: 30px 5%;
+        padding: 25px 8%;
     }
-
-    .intro > img {
-        width: 100%;
-    }
-
 
     /* Education */
     .education {
@@ -552,47 +609,58 @@ nav a {
     }
 
     .education article {
+        position: relative;
+        right: auto;
+        bottom: auto;
         width: 100%;
         padding: 30px 5%;
     }
 
     .education > img {
-        width: 100%;
+        height: 350px;
     }
-
 
     /* Quote */
     .quote {
-        padding: 40px 8%;
+        flex-direction: column;
+        padding: 50px 8%;
+        text-align: center;
+    }
+
+    .quote > img {
+        width: 180px;
+        height: 180px;
     }
 
     .quote article p:first-child {
         font-size: 20px;
     }
 
-
     /* Research */
-    .research {
-        flex-direction: column;
-    }
-
     .research > img {
-        width: 100%;
+        height: 350px;
     }
 
     .research article {
+        position: relative;
+        left: auto;
+        bottom: auto;
         width: 100%;
         padding: 30px 5%;
+        box-shadow: none;
     }
-
 
     /* Opportunities */
     .opportunities {
         flex-direction: column;
-        padding: 30px 5%;
-        gap: 30px;
+        max-width: 450px;
+        padding: 40px 20px;
+        gap: 35px;
     }
 
+    .opportunities article {
+        width: 100%;
+    }
 
     /* Centers and Institutes */
     .centers {
@@ -600,14 +668,17 @@ nav a {
     }
 
     .centers > img {
-        width: 100%;
+        height: 350px;
     }
 
     .centers article {
+        position: relative;
+        left: auto;
+        bottom: auto;
         width: 100%;
         padding: 30px 5%;
+        box-shadow: none;
     }
-
 
     /* Stay Connected */
     .connected {
