@@ -34,61 +34,273 @@ img {
 
 /* Utility Navigation */
 .utility-nav {
-    padding: 8px 8%;
+    padding: 10px 5% 0;
     background-color: #000000;
-    color: white;
 }
 
 .utility-nav ul {
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 0;
     margin: 0;
     padding: 0;
 }
 
 .utility-nav li {
     list-style-type: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.utility-nav li:not(:last-child)::after {
+    content: "|";
+    margin: 0 12px;
 }
 
 .utility-nav a {
-    font-size: 14px;
-    font-weight: bold;
+    color: white;
 }
 
 /* School Header */
 .school-header {
-    padding: 22px 8%;
-    background-color: #73000a;
+    height: 110px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
     color: white;
+}
+
+.usc-name p {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.usc-name h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: normal;
 }
 
 .school-header h1 {
     margin: 0;
-    font-size: 32px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+/* School Footer */
+.school-footer {
+    background-color: #eeeeee;
+    padding: 0 8% 30px;
+}
+
+.school-footer-info {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.school-footer-name {
+    flex: 2;
+}
+
+.school-footer-name h2 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    color: #73000a;
+}
+
+.school-button {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.school-footer-links {
+    flex: 2;
+    display: flex;
+    gap: 50px;
+    padding: 0 30px;
+    border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+}
+
+.school-footer-links ul {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.school-footer-links li {
+    list-style-type: none;
+    margin: 12px 0;
+}
+
+.school-footer-links a {
+    color: #73000a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.school-address {
+    flex: 1;
+}
+
+.school-address p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.school-address a {
+    color: #73000a;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* University Footer */
+.university-footer {
+    background-color: #73000a;
+    color: white;
+    padding: 30px 8% 55px;
+}
+
+.university-footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.university-name {
+    margin-bottom: 35px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.university-name p {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.university-name h2 {
+    margin: 0;
+    font-size: 30px;
     font-weight: normal;
+}
+
+.university-columns {
+    display: flex;
+    gap: 45px;
+}
+
+.university-columns section h3 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.college-links {
+    flex: 3;
+}
+
+.office-links {
+    flex: 2;
+}
+
+.tool-links {
+    flex: 1;
+}
+
+.college-columns,
+.office-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.college-columns ul,
+.office-columns ul {
+    flex: 1;
+}
+
+.university-columns ul {
+    margin: 0;
+    padding: 0;
+}
+
+.university-columns li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.university-columns a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+    background-color: #000000;
+    color: white;
+    padding: 12px 8%;
+}
+
+.bottom-footer p {
+    max-width: 1200px;
+    margin: auto;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.bottom-footer a {
+    color: white;
 }
 
 /* Main Navigation */
 
 nav {
-    background-color: #ffffff;
-    border-bottom: 1px solid #dddddd;
+    background-color: #73000a;
 }
 
 nav > ul {
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0 5%;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1650px;
+
+    margin: auto;
+    padding: 0;
 }
 
 nav > ul > li {
     list-style-type: none;
     text-align: center;
-    padding: 16px 12px;
-    font-size: 14px;
+    padding: 18px 30px;
+
+    color: white;
+    font-size: 16px;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: white;
 }
 
 /* Intro */
@@ -247,8 +459,9 @@ nav > ul > li {
 
 /* Stay Connected */
 .connected {
-    padding: 60px 8%;
+    padding: 55px 8% 70px;
     text-align: center;
+    background-color: #eeeeee;
 }
 
 .connected article {
@@ -256,66 +469,31 @@ nav > ul > li {
     margin: auto;
 }
 
+.connected h2 {
+    margin: 0;
+    color: #73000a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+}
+
+.connected p {
+    margin: 25px 0 40px;
+}
+
 .connected-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+    gap: 55px;
 }
 
 .connected-links a {
-    padding: 15px 25px;
-}
-
-/* Footer */
-footer {
-    padding-top: 40px;
-}
-
-.footer-heading {
-    width: 84%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-heading h2 {
-    margin: 0;
-}
-
-.footer-links {
-    width: 84%;
-    margin: 30px auto;
-    display: flex;
-    gap: 80px;
-}
-
-.footer-links section {
-    flex: 1;
-}
-
-.footer-links ul {
-    margin: 0;
-    padding: 0;
-}
-
-.footer-links li {
-    list-style-type: none;
-    margin: 8px 0;
-}
-
-.address, .copyright {
-    width: 84%;
-    margin: auto;
-}
-
-.address {
-    padding: 20px 0;
-}
-
-.copyright {
-    padding: 15px 0;
+    display: block;
+    padding: 14px 28px;
+    background-color: #73000a;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px #aaaaaa;
 }
 
 /* Responsive */
@@ -332,7 +510,6 @@ footer {
         gap: 5px;
     }
 
-
     /* School Header */
     .school-header {
         padding: 15px 5%;
@@ -342,7 +519,6 @@ footer {
     .school-header h1 {
         font-size: 26px;
     }
-
 
     /* Main Navigation */
     nav > ul {
@@ -354,7 +530,6 @@ footer {
         width: 100%;
         padding: 10px;
     }
-
 
     /* Intro */
     .intro {
@@ -442,25 +617,5 @@ footer {
     .connected-links {
         flex-direction: column;
         gap: 10px;
-    }
-
-
-    /* Footer */
-    .footer-heading {
-        width: 90%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .footer-links {
-        width: 90%;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .address,
-    .copyright {
-        width: 90%;
     }
 }
