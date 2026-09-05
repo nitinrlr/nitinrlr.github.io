@@ -43,7 +43,7 @@ img {
     justify-content: flex-start;
     gap: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 16.6%;
 }
 
 .utility-nav li {
@@ -66,7 +66,7 @@ img {
 /* School Header */
 .school-header {
     height: 110px;
-    padding: 0 5%;
+    padding: 0 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,6 +86,18 @@ img {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 34px;
     font-weight: normal;
+}
+
+.usc-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.usc-brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
 }
 
 .school-header h1 {
@@ -126,8 +138,28 @@ img {
     padding: 12px 18px;
     background-color: #000000;
     color: white;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px #999999;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.school-footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.school-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-socials a {
+    color: #8b4b50;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .school-footer-links {
@@ -179,8 +211,32 @@ img {
 }
 
 .university-footer-content {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
+}
+
+.university-socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: -40px;
+    margin-bottom: 25px;
+}
+
+.university-socials a {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .university-name {
@@ -190,14 +246,28 @@ img {
 
 .university-name p {
     margin: 0;
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
 .university-name h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: normal;
+}
+
+.university-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.university-brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transform: translateY(-20px);
 }
 
 .university-columns {
@@ -363,6 +433,7 @@ nav a {
     background-color: #000000;
     color: white;
     font-weight: bold;
+    border: 2px solid white;
 }
 
 /* Quote */
@@ -439,6 +510,7 @@ nav a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    border: 2px solid white;
 }
 
 /* Opportunities */
@@ -516,6 +588,7 @@ nav a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    border: 2px solid white;
 }
 
 /* Stay Connected */
@@ -534,7 +607,7 @@ nav a {
     margin: 0;
     color: #75000a;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 46px;
+    font-size: 68px;
 }
 
 .connected p {
@@ -554,7 +627,8 @@ nav a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    box-shadow: 0 2px 5px #aaaaaa;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px #aaaaaa;
 }
 
 /* Responsive */
@@ -575,6 +649,8 @@ nav a {
     .school-header {
         padding: 15px 5%;
         text-align: center;
+        width: 80%;
+        max-width: 1250px;
     }
 
     .school-header h1 {
