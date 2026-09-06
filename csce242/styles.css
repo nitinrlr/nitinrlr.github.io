@@ -47,20 +47,20 @@ main {
 #assignments, #projects {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 article {
     background-color: #9e87e1;
-    width: 300px;
+    width: 280px;
     padding: 12px;
     border: 1px solid #341e73;
     border-radius: 4px;
 }
 
 article img {
-    width: 300px;
-    height: 150px;
+    width: 280px;
+    height: 140px;
     object-fit: cover;
 }
 
