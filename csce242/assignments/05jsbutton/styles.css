@@ -1,0 +1,127 @@
+/* Structural */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f0;
+    color: #333333;
+}
+
+#content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header h2 {
+    margin: 12px 0 0;
+    font-size: 20px;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+    height: 450px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    background-color: #fffde5;
+}
+
+.column h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Speech */
+#speech {
+    position: relative;
+    cursor: pointer;
+}
+
+#speech-bubble {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 14px;
+    background-color: white;
+    border: 2px solid #777777;
+    border-radius: 10px;
+}
+
+#speech-bubble p {
+    margin: 0;
+}
+
+/* Triangle underneath speech bubble */
+#speech-bubble::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #777777;
+}
+
+/* Beverage */
+#beverage label {
+    font-size: 14px;
+}
+
+#drink {
+    margin-top: 10px;
+}
+
+#drink-message {
+    margin-top: 12px;
+}
+
+/* Sticker */
+#sticker {
+    position: relative;
+    text-align: center;
+}
+
+.emoji-sticker {
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    font-size: 24px;
+}
+
+#sun {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+}
