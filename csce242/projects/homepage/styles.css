@@ -43,9 +43,12 @@ header {
     padding: 20px 5%;
 }
 
+.logo, header nav a {
+    font-weight: bold;
+}
+
 .logo {
     font-size: 24px;
-    font-weight: bold;
     white-space: nowrap;
 }
 
@@ -59,10 +62,6 @@ header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-header nav a {
-    font-weight: bold;
 }
 
 header input[type="search"] {
@@ -171,6 +170,101 @@ header input[type="search"] {
 
 .dot.active {
     background-color: var(--color-accent);
+}
+
+/* Buzzing Right Now */
+.buzzing {
+    padding: 20px 5% 30px;
+}
+
+.buzzing h2, .genres h2 {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.movie-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.movie-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-rating {
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Famous Genres */
+.genres {
+    padding: 10px 5% 30px;
+}
+
+.genre-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.movie-card, .genre-card {
+    flex: 1;
+    min-width: 0;
+}
+
+.genre-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.genre-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.genre-info {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.genre-info h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.genre-info p {
+    color: var(--color-text-muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.genre-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    color: var(--color-accent);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Row Arrow */
