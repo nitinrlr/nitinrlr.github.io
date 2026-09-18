@@ -348,24 +348,34 @@ footer p {
         display: none;
     }
 
+    .buzzing {
+        position: relative;
+    }
+
     .movie-row {
-        overflow-x: auto;
-        padding-bottom: 10px;
+        overflow-x: hidden;
+    }
+
+    .movie-row .row-arrow {
+        position: absolute;
+        right: 5%;
+        top: 165px;
     }
 
     .movie-card {
         flex: 0 0 140px;
     }
 
-    .row-arrow {
+    .genre-row .row-arrow {
         display: none;
     }
 
     .genre-row {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .genre-card img {
-        height: 180px;
+        height: 140px;
     }
 }
