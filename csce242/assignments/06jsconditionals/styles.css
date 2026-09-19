@@ -1,0 +1,99 @@
+/* Structural */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #5a8e94;
+}
+
+#content {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #f0f0e8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header h2 {
+    margin: 20px 0;
+    font-size: 22px;
+    color: #d88282;
+}
+
+nav {
+    font-size: 14px;
+}
+
+nav a {
+    color: #5a8e94;
+    text-decoration: none;
+}
+
+/* Exercises */
+.exercise {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #5a8e94;
+}
+
+.exercise h3 {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.exercise p {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.exercise label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.exercise input {
+    width: 60%;
+    max-width: 270px;
+    padding: 4px;
+    border: 1px solid #5a8e94;
+    color: #5a8e94;
+}
+
+.hide {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .exercise input {
+        width: 90%;
+    }
+}
