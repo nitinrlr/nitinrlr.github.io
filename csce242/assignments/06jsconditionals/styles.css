@@ -44,6 +44,11 @@ nav a {
     text-decoration: none;
 }
 
+#arrow {
+    display: none;
+    cursor: pointer;
+}
+
 /* Exercises */
 .exercise {
     padding: 20px;
@@ -60,12 +65,6 @@ nav a {
 
 .exercise p {
     margin: 15px 0;
-    font-size: 14px;
-}
-
-.exercise label {
-    display: block;
-    margin-bottom: 15px;
     font-size: 14px;
 }
 
@@ -89,6 +88,36 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    nav {
+        text-align: left;
+        padding: 0 5px;
+        font-size: 16px;
+    }
+
+    #arrow {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #menu-items {
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    #menu-items.show {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .divider {
+        display: none;
+    }
+
     header h1 {
         font-size: 26px;
     }
