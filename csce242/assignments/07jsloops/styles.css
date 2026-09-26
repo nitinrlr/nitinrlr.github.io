@@ -53,6 +53,25 @@ body {
     background-color: inherit;
 }
 
+/* Car windows, idea from https://codepen.io/Vanaja-Kothai/pen/gbPOvgZ */
+.car-roof::before, .car-roof::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 15px;
+    height: 9px;
+    border-radius: 3px 3px 0 0;
+    background-color: #d3e8f5;
+}
+
+.car-roof::before {
+    left: 4px;
+}
+
+.car-roof::after {
+    right: 4px;
+}
+
 /* Car wheels */
 .car::before, .car::after {
     content: "";
