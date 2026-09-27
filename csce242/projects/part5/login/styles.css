@@ -135,6 +135,9 @@ footer p {
     padding: 70px 5%;
     min-height: 70vh;
     background-color: var(--color-bg-dark);
+    background-image: url("images/login_backgrnd.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .login-card {
@@ -205,4 +208,32 @@ footer p {
 .signup a {
     color: var(--color-accent);
     font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header input[type="search"] {
+        width: 100%;
+    }
+
+    .login-main {
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
 }

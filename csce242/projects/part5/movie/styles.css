@@ -134,6 +134,9 @@ footer p {
     gap: 35px;
     padding: 40px 5%;
     background-color: var(--color-bg-dark);
+    background-image: url("images/JP_backgrnd.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .movie-hero img {
@@ -327,3 +330,71 @@ footer p {
 .movie-year {
     color: var(--color-text-muted);
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header input[type="search"] {
+        width: 100%;
+    }
+
+    .movie-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 8%;
+    }
+
+    .movie-hero img {
+        width: 170px;
+    }
+
+    .movie-intro h1 {
+        font-size: 28px;
+    }
+
+    .movie-tags {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .movie-body {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 8%;
+    }
+
+    .cast-row {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    /* 2 cast members per row, 1 gap of 25px between them */
+    .cast-card {
+        flex: 0 0 calc((100% - 25px) / 2);
+    }
+
+    .similar {
+        padding: 0 8% 30px;
+    }
+
+    .movie-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .movie-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+}
+

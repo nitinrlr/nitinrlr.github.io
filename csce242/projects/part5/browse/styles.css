@@ -245,3 +245,51 @@ footer p {
     color: var(--color-bg);
     font-weight: bold;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header input[type="search"] {
+        width: 100%;
+    }
+
+    .browse-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+
+    .genre-filter ul {
+        gap: 8px;
+    }
+
+    .pill {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    /* 2 cards per row, 1 gap of 25px between them */
+    .movie-card {
+        flex: 0 0 calc((100% - 25px) / 2);
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+}
+

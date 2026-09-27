@@ -130,8 +130,11 @@ footer p {
 /* About Hero */
 .about-hero {
     text-align: center;
-    padding: 70px 15%;
+    padding: 90px 15%;
     background-color: var(--color-bg-dark);
+    background-image: url("images/theater.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .about-hero p {
@@ -223,4 +226,52 @@ footer p {
     font-weight: bold;
     padding: 12px 26px;
     border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header input[type="search"] {
+        width: 100%;
+    }
+
+    .about-hero {
+        padding: 40px 8%;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+
+    .mission {
+        padding: 30px 8%;
+    }
+
+    .mission-row {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .join {
+        padding: 40px 8%;
+    }
+
+    .join h2 {
+        font-size: 18px;
+    }
 }
