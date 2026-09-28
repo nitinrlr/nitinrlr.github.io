@@ -66,6 +66,12 @@ header nav ul {
     padding: 0;
 }
 
+#arrow {
+    display: none;
+    margin: 0;
+    cursor: pointer;
+}
+
 header nav a.active {
     color: var(--color-accent);
 }
@@ -116,15 +122,15 @@ footer p {
 }
 
 .socials a {
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--color-text-muted);
-    border-radius: 50%;
     color: var(--color-text-muted);
-    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.socials img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Movie Hero */
@@ -338,10 +344,20 @@ footer p {
         text-align: center;
     }
 
+    #arrow {
+        display: block;
+        font-size: 14px;
+    }
+
     header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
+        display: none;
+    }
+
+    header nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 
     header input[type="search"] {
