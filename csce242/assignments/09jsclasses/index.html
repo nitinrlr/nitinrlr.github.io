@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSClasses</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <h1>Vacations</h1>
+                <h2>Vacation Experiences</h2>
+            </header>
+            <main>
+                <div id="gallery"></div>
+            </main>
+            <footer>
+                <p>&copy; nitinbhupatiraju</p>
+            </footer>
+        </div>
+        <div id="modal" class="w3-modal">
+            <div id="modal-content" class="w3-modal-content w3-pale-blue">
+                <div class="w3-container">
+                    <span id="close-modal" class="w3-button w3-display-topright">&times;</span>
+                    <div id="modal-body">
+                        <iframe id="modal-map" title="Map of the vacation"></iframe>
+                        <div id="modal-info">
+                            <h3 id="modal-title"></h3>
+                            <p><strong>Type:</strong> <span id="modal-type"></span></p>
+                            <p><strong>Description:</strong> <span id="modal-description"></span></p>
+                            <p><strong>Things To Do:</strong> <span id="modal-things"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
