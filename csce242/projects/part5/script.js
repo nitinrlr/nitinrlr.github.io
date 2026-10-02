@@ -1,13 +1,13 @@
-// shows and hides nav menu on small screens
-document.getElementById("arrow").onclick = () => {
+// Shows and hides the nav menu on small screens
+document.getElementById("nav-toggle").onclick = () => {
     const menu = document.getElementById("menu-items");
-    const arrow = document.getElementById("arrow");
+    const toggle = document.getElementById("nav-toggle");
 
     menu.classList.toggle("show");
 
     if (menu.classList.contains("show")) {
-        arrow.innerHTML = "&#9650;";
+        toggle.innerHTML = "&#10005;";
     } else {
-        arrow.innerHTML = "&#9660;";
+        toggle.innerHTML = "&#9776;";
     }
 };
