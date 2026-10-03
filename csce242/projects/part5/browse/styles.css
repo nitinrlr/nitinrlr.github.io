@@ -222,6 +222,16 @@ footer p {
     font-size: 13px;
 }
 
+#no-results {
+    color: var(--color-text-muted);
+    text-align: center;
+    padding: 20px 5% 40px;
+}
+
+.hide {
+    display: none;
+}
+
 /* Pagination */
 .pagination {
     display: flex;
