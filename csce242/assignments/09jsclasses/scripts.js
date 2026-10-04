@@ -80,11 +80,6 @@ vacations.push(new Vacation("Gatlinburg", "Mountain",
     "Ride the SkyLift, hike to Clingmans Dome, visit Ober Mountain.",
     "gatlinburg.jpg", "https://www.google.com/maps?q=Gatlinburg,Tennessee&output=embed"));
 
-vacations.push(new Vacation("Table Rock", "Mountain",
-    "A state park in the Blue Ridge foothills built around a well known granite peak.",
-    "Hike the Table Rock Trail, swim in the lake, camp overnight.",
-    "tablerock.jpg", "https://www.google.com/maps?q=Table+Rock,South+Carolina&output=embed"));
-
 vacations.push(new Vacation("Myrtle Beach", "Beach",
     "A busy beach town with a long boardwalk and plenty to do after the sun goes down.",
     "Walk the boardwalk, ride the SkyWheel, play a round of mini golf.",
@@ -99,11 +94,6 @@ vacations.push(new Vacation("Hilton Head", "Beach",
     "A quiet island known for its bike paths, golf courses, and calm water.",
     "Bike the beach paths, play a round of golf, take a dolphin tour.",
     "hiltonhead.jpg", "https://www.google.com/maps?q=Hilton+Head+Island,South+Carolina&output=embed"));
-
-vacations.push(new Vacation("Outer Banks", "Beach",
-    "A long string of barrier islands covered in tall sand dunes and lighthouses.",
-    "Climb the Cape Hatteras Lighthouse, ride the dunes at Jockeys Ridge, go kayaking.",
-    "outerbanks.jpg", "https://www.google.com/maps?q=Outer+Banks,North+Carolina&output=embed"));
 
 const gallery = document.querySelector("#gallery");
 const modal = document.querySelector("#modal");

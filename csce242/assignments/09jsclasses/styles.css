@@ -50,7 +50,7 @@ header h2 {
 }
 
 .card {
-    flex: 0 0 calc((100% - 60px) / 4);
+    flex: 0 0 calc((100% - 40px) / 3);
     background-color: #ffffff;
     border: 1px solid #945a5a;
     cursor: pointer;
@@ -125,4 +125,20 @@ footer {
     font-size: 14px;
     color: #945a5a;
     padding-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+    #modal-body {
+        flex-direction: column;
+    }
+
+    #modal-map {
+        flex: none;
+        height: 200px;
+    }
 }
