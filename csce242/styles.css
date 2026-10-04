@@ -97,6 +97,13 @@ article p {
     margin-bottom: 5px;
 }
 
+.links a {
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
 /* Footer */
 footer {
     text-align: center;
