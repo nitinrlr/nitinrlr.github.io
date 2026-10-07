@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MovieBuzz - Browse</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="../homepage/index.html" class="logo">MOVIE<span>BUZZ</span></a>
+            <p id="nav-toggle">&#9776;</p>
+            <nav>
+                <ul id="menu-items">
+                    <li><a href="../homepage/index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Browse</a></li>
+                    <li><a href="../about/index.html">About Us</a></li>
+                    <li><a href="../login/index.html">Login</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="Search...">
+        </header>
+        <main>
+            <section class="browse-top">
+                <h1 class="page-title">Explore Movies</h1>
+                <select id="sort">
+                    <option value="newest">Sort: Newest</option>
+                    <option value="rating">Sort: Rating</option>
+                    <option value="title">Sort: A-Z</option>
+                </select>
+            </section>
+            <nav class="genre-filter">
+                <ul>
+                    <li><a href="#" class="pill active">All</a></li>
+                    <li><a href="#" class="pill">Action</a></li>
+                    <li><a href="#" class="pill">Comedy</a></li>
+                    <li><a href="#" class="pill">Drama</a></li>
+                    <li><a href="#" class="pill">Sci-Fi</a></li>
+                    <li><a href="#" class="pill">Horror</a></li>
+                    <li><a href="#" class="pill">Thriller</a></li>
+                    <li><a href="#" class="pill">Romance</a></li>
+                    <li><a href="#" class="pill">Animation</a></li>
+                </ul>
+            </nav>
+            <section class="movie-grid"></section>
+            <p id="no-results" class="hide">No movies in this genre yet.</p>
+            <nav class="pagination">
+                <a href="#">Previous</a>
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="page">3</a>
+                <a href="#">Next</a>
+            </nav>
+        </main>
+        <footer>
+            <a href="../homepage/index.html" class="logo">MOVIE<span>BUZZ</span></a>
+            <p>&copy; Copyright Nitin Bhupatiraju</p>
+            <div class="socials"> <!--  social media icons from: simpleicons.org -->
+                <a href="#" aria-label="Instagram">
+                    <img src="../homepage/images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" aria-label="X">
+                    <img src="../homepage/images/x.svg" alt="X">
+                </a>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+        <script src="filter.js"></script>
+        <script src="movies.js"></script>
+    </body>
+</html>

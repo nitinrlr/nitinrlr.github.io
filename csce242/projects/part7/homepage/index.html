@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MovieBuzz - Home</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">MOVIE<span>BUZZ</span></a>
+            <p id="nav-toggle">&#9776;</p>
+            <nav>
+                <ul id="menu-items">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="../browse/index.html">Browse</a></li>
+                    <li><a href="../about/index.html">About Us</a></li>
+                    <li><a href="../login/index.html">Login</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="Search...">
+        </header>
+        <main>
+            <section class="hero">
+                <button class="hero-arrow hero-arrow-prev" aria-label="Previous slide">&#8249;</button>
+                <div class="hero-slide">
+                    <img src="images/jpark-hero.webp" alt="Jurassic Park">
+                    <article class="hero-info">
+                        <p class="hero-label">Featured Movie</p>
+                        <h2>Jurassic Park</h2>
+                        <p class="hero-desc">
+                            An island of prehistoric dinosaurs becomes a fight for
+                            survival when the park's attractions escape their
+                            enclosures. Every step brings new danger, leaving one
+                            question. Who will make it out alive?
+                        </p>
+                        <p class="hero-rating">&#9733; 9.0</p>
+                        <a href="../movie/index.html" class="hero-details">Details</a>
+                    </article>
+                </div>
+                <button class="hero-arrow hero-arrow-next" aria-label="Next slide">&#8250;</button>
+                <div class="hero-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+            <section class="buzzing">
+                <h2>Buzzing Right Now</h2>
+                <div class="movie-row">
+                    <article class="movie-card">
+                        <a href="../movie/index.html">
+                            <img src="images/avngers.jpg" alt="The Avengers poster">
+                        </a>
+                        <p class="movie-rating">&#9733; 9.2</p>
+                    </article>
+                    <article class="movie-card">
+                        <img src="images/jaws.jpg" alt="Jaws poster">
+                        <p class="movie-rating">&#9733; 8.3</p>
+                    </article>
+                    <article class="movie-card">
+                        <img src="images/joker.jpg" alt="Joker poster">
+                        <p class="movie-rating">&#9733; 8.9</p>
+                    </article>
+                    <article class="movie-card">
+                        <img src="images/dune.jpg" alt="Dune poster">
+                        <p class="movie-rating">&#9733; 8.0</p>
+                    </article>
+                    <article class="movie-card">
+                        <img src="images/s-man.jpg" alt="Spider-Man poster">
+                        <p class="movie-rating">&#9733; 9.1</p>
+                    </article>
+                    <button class="row-arrow" aria-label="See more movies">&#8250;</button>
+                </div>
+            </section>
+            <section class="genres">
+                <h2>Famous Genres</h2>
+                <div class="genre-row">
+                    <article class="genre-card">
+                        <a href="../browse/index.html?genre=Action">
+                            <img src="images/action.png" alt="Action genre">
+                            <div class="genre-info">
+                                <h3>Action</h3>
+                                <p>Lots of Thrills</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="genre-card">
+                        <a href="../browse/index.html?genre=Comedy">
+                            <img src="images/comedy.png" alt="Comedy genre">
+                            <div class="genre-info">
+                                <h3>Comedy</h3>
+                                <p>Lots of Laughter</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="genre-card">
+                        <a href="../browse/index.html?genre=Sci-Fi">
+                            <img src="images/sci-fi.png" alt="Sci-Fi genre">
+                            <div class="genre-info">
+                                <h3>Sci-Fi</h3>
+                                <p>Lots of Woah</p>
+                            </div>
+                        </a>
+                    </article>
+                    <button class="row-arrow" aria-label="See more genres">&#8250;</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="#" class="logo">MOVIE<span>BUZZ</span></a>
+            <p>&copy; Copyright Nitin Bhupatiraju</p>
+            <div class="socials"> <!--  social media icons from: simpleicons.org -->
+                <a href="#" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" aria-label="X">
+                    <img src="images/x.svg" alt="X">
+                </a>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>
