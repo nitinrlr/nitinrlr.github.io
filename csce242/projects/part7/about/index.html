@@ -79,6 +79,29 @@
                 </p>
                 <a href="../login/index.html" class="join-button">Sign Up For Free</a>
             </section>
+            <section class="contact">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="contact-intro">Have any questions or a movie suggestions? Send us a message.</p>
+                <form id="contact-form">
+                    <input type="hidden" name="subject" value="New message from MovieBuzz">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </p>
+                    <div class="form-bottom">
+                        <button type="submit">Send Message</button>
+                        <p id="result"></p>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer>
             <a href="../homepage/index.html" class="logo">MOVIE<span>BUZZ</span></a>
@@ -93,5 +116,6 @@
             </div>
         </footer>
         <script src="../script.js"></script>
+        <script src="contact.js"></script>
     </body>
 </html>
