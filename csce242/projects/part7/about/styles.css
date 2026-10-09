@@ -70,7 +70,6 @@ header nav ul {
 
 #nav-toggle {
     display: none;
-    margin: 0;
     cursor: pointer;
 }
 
@@ -121,13 +120,6 @@ footer p {
 .socials {
     display: flex;
     gap: 12px;
-}
-
-.socials a {
-    color: var(--color-text-muted);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .socials img {
@@ -299,7 +291,6 @@ footer p {
 }
 
 #result {
-    margin: 0;
     font-size: 14px;
 }
 
