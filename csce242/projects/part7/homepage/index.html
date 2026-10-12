@@ -22,20 +22,50 @@
         <main>
             <section class="hero">
                 <button class="hero-arrow hero-arrow-prev" aria-label="Previous slide">&#8249;</button>
-                <div class="hero-slide">
-                    <img src="images/jpark-hero.webp" alt="Jurassic Park">
-                    <article class="hero-info">
-                        <p class="hero-label">Featured Movie</p>
-                        <h2>Jurassic Park</h2>
-                        <p class="hero-desc">
-                            An island of prehistoric dinosaurs becomes a fight for
-                            survival when the park's attractions escape their
-                            enclosures. Every step brings new danger, leaving one
-                            question. Who will make it out alive?
-                        </p>
-                        <p class="hero-rating">&#9733; 9.0</p>
-                        <a href="../movie/index.html" class="hero-details">Details</a>
-                    </article>
+                <div id="slides">
+                    <div class="hero-slide">
+                        <img src="images/jpark-hero.webp" alt="Jurassic Park">
+                        <article class="hero-info">
+                            <p class="hero-label">Featured Movie</p>
+                            <h2>Jurassic Park</h2>
+                            <p class="hero-desc">
+                                An island of prehistoric dinosaurs becomes a fight for
+                                survival when the park's attractions escape their
+                                enclosures. Every step brings new danger, leaving one
+                                question. Who will make it out alive?
+                            </p>
+                            <p class="hero-rating">&#9733; 9.0</p>
+                            <a href="../movie/index.html" class="hero-details">Details</a>
+                        </article>
+                    </div>
+                    <div class="hero-slide hidden">
+                        <img src="images/dune-hero.png" alt="Dune">
+                        <article class="hero-info">
+                            <p class="hero-label">Featured Movie</p>
+                            <h2>Dune: Part Two</h2>
+                            <p class="hero-desc">
+                                Paul Atreides unites with the Fremen to fight back against the
+                                empire that destroyed his family, while visions of a dark future
+                                push him toward a choice that could change the desert forever.
+                            </p>
+                            <p class="hero-rating">&#9733; 8.0</p>
+                            <a href="../browse/index.html?genre=Sci-Fi" class="hero-details">More Sci-Fi</a>
+                        </article>
+                    </div>
+                    <div class="hero-slide hidden">
+                        <img src="images/avengers-hero.png" alt="Avengers">
+                        <article class="hero-info">
+                            <p class="hero-label">Featured Movie</p>
+                            <h2>The Avengers</h2>
+                            <p class="hero-desc">
+                                Earth's mightiest heroes are brought together for the first time
+                                to stop Loki and his alien army from taking over the planet,
+                                if they can learn to work as a team before it is too late.
+                            </p>
+                            <p class="hero-rating">&#9733; 9.2</p>
+                            <a href="../browse/index.html?genre=Action" class="hero-details">More Action</a>
+                        </article>
+                    </div>
                 </div>
                 <button class="hero-arrow hero-arrow-next" aria-label="Next slide">&#8250;</button>
                 <div class="hero-dots">
@@ -119,5 +149,6 @@
             </div>
         </footer>
         <script src="../script.js"></script>
+        <script src="slideshow.js"></script>
     </body>
 </html>

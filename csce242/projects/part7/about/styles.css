@@ -290,7 +290,8 @@ footer p {
     cursor: pointer;
 }
 
-#result {
+.form-bottom #result {
+    margin: 0;
     font-size: 14px;
 }
 

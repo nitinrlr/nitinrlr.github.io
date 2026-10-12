@@ -187,6 +187,11 @@ header input[type="search"] {
     background-color: var(--color-accent);
 }
 
+/* slides not showing */
+.hidden {
+    display: none;
+}
+
 /* Buzzing Right Now */
 .buzzing {
     padding: 20px 5% 30px;

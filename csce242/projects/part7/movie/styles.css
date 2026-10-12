@@ -204,6 +204,20 @@ footer p {
     border-radius: 10px;
 }
 
+/* Trailer */
+.trailer {
+    margin-bottom: 40px;
+}
+
+.trailer iframe {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+}
+
 .synopsis p {
     color: var(--color-text-muted);
     line-height: 1.7;
